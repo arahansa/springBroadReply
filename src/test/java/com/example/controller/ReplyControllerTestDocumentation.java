@@ -1,9 +1,12 @@
 package com.example.controller;
 
-import static org.junit.Assert.*;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
+import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -28,7 +31,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @SpringApplicationConfiguration(classes = SpringBroadReplyApplication.class)
 @WebAppConfiguration
 @Transactional
-public class ReplyControllerTest {
+public class ReplyControllerTestDocumentation {
 	
 	@Autowired
     private WebApplicationContext wac;
@@ -36,13 +39,17 @@ public class ReplyControllerTest {
 	private ObjectMapper objectMapper;
 	@Autowired
 	private ReplyRepository replyRepository;
+	
+	
+	
    
     private MockMvc mockMvc;
     
     
     @Before
     public void setUp() {
-        mockMvc = MockMvcBuilders.webAppContextSetup(wac).build();
+        mockMvc = MockMvcBuilders.webAppContextSetup(wac)
+        		.build();
     }
     
     

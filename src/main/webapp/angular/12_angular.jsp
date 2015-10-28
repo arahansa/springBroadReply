@@ -8,7 +8,7 @@
 </style>
 </head>
 <!-- 
-	댓글 하나만 수정되게 함... 
+	댓글 하나만 수정되게 함... two way 가 깨질려나? 음 ! 
  -->
 <body ng-controller="replyController" ng-init="init(1)">
 <h1>헬로 앵귤러</h1>

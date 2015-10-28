@@ -9,6 +9,8 @@
 </head>
 
 <body ng-controller="replyController" ng-init="init(1)">
+<h3>현재 댓글 {{ replies.length }} </h3>
+
 <h1>헬로 앵귤러</h1>
 <h4>댓글 입력</h4>
 	닉넴 : <input type="text" ng-model="reply.author"> ,  
