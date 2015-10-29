@@ -12,7 +12,7 @@
 <script src="/plugins/angular/angular.min.js"></script>
 <script>
 var app = angular.module('testApp', []);
-app.directive('myView', function($compile){
+app.directive('myView', function(){
 	return {
 		restrict: 'E',
 		template : '<span>안녕하세요</span>'

@@ -67,7 +67,7 @@ function submit(){
 }
 // 수정 modifyForm
 function modifyForm(obj){
-	makeCommentView($("div[status=modifying]"), tempContent);
+	makeCommentView($("div.reply[status=modifying]"), tempContent);
 	$(obj).closest("div.reply").attr("status", "modifying");
 	tempContent = $(obj).prev().text();
 	$(obj).prev().replaceWith(

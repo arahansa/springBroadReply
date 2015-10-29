@@ -73,10 +73,12 @@ app.controller('replyController', function ($scope, $http) {
 		$(obj).next().remove();
 		$(obj).remove();
 	}
+	
+	$scope.update = function(obj){
+		console.log(" 수정으로 받은 객체", obj);
+	}
 });
-function update(obj){
-	console.log(" 수정으로 받은 객체", obj);
-}
+
 
 </script>
 </body>
